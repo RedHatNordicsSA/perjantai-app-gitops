@@ -1,0 +1,21 @@
+app:
+  name: perjantai-app
+  namespace: perjantai-app-dev
+  cluster: .apps.rh-ocp-01.cool.lab
+
+git:
+  branch: main
+  repo: https://github.com/RedHatNordicsSA/perjantai-app
+  org: RedHatNordicsSA
+  name: perjantai-app
+  host: github.com?owner=RedHatNordicsSA&repo=perjantai-app
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: perjantai-app
+  tag: latest
